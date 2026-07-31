@@ -2,7 +2,7 @@ num=int(input("Enter a num"))
 if num<0:
     print("Invalid input")
 elif num==0:
-    print()
+    print("No Terms")
 elif num==1:
     print(0)
 else:
