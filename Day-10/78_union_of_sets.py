@@ -1,0 +1,6 @@
+a=list(map(int,input("Enter your numbers").split()))
+b=list(map(int,input("Enter your numbers").split()))
+new_a=set(a)
+new_b=set(b)
+union_set=new_a.union(new_b)
+print(union_set)

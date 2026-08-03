@@ -1,0 +1,6 @@
+a=list(map(int,input("Enter your numbers").split()))
+b=list(map(int,input("Enter your numbers").split()))
+new_a=set(a)
+new_b=set(b)
+intersection_set=new_a.intersection(new_b)
+print(intersection_set)
