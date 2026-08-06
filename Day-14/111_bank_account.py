@@ -11,7 +11,7 @@ print("Name =",account_01.name)
 print("Account Number =",account_01.account_no)
 print("Balance =",account_01.balance)
 
-choice=input("Do you want to Deposit or Withdraw :").lower()
+choice=input("Do you want to deposit or withdraw :").lower()
 
 if choice=="deposit":
     saving=int(input("Enter amount :"))
@@ -19,8 +19,11 @@ if choice=="deposit":
 
 elif choice=="withdraw":
     saving=int(input("Enter amount :"))
-    account_01.balance=account_01.balance-saving
 
+    if saving <= account_01.balance:
+        account_01.balance=account_01.balance-saving
+    else:
+        print("Insufficient Balance")
 else:
     print("Invalid Input")
 
