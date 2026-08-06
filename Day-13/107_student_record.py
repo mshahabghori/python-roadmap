@@ -1,0 +1,17 @@
+def student():
+    file=open("Day-13/student.txt","a")
+    name=input("Enter student name :")
+    age=int(input("Enter studeent age :"))
+    marks=int(input("Enter studeent marks :"))
+    file.write(f"Name={name}\nAge={age}\nMarks={marks}\n------------------------------\n")
+    file.close()
+    
+choice=input("Do you want to enter student details ?")
+if choice.lower()=="yes":
+    student()
+    file=open("Day-13/student.txt","r")
+    updated_file=file.read()
+    print(updated_file)
+    file.close()
+else:
+    exit()

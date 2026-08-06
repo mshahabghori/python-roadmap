@@ -1,0 +1,5 @@
+file=open("Day-13/notes_1.txt","r")
+text=file.read()
+words=text.split()
+print(len(words))
+file.close()

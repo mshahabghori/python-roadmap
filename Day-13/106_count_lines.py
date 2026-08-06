@@ -1,0 +1,5 @@
+file=open("Day-13/notes_1.txt","r")
+text=file.read()
+line=text.split("\n")
+print(len(line))
+file.close()
