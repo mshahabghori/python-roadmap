@@ -1,0 +1,5 @@
+sentence=input("Enter a sentence : ").strip()
+sentence=sentence.replace("java","python")
+words=sentence.split()
+sentence=" ".join(words)
+print("Your upddated sentennce is :",sentence)
